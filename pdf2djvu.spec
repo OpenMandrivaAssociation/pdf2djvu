@@ -1,6 +1,6 @@
 %define name	pdf2djvu
-%define version	0.5.7
-%define release %mkrel 2
+%define version	0.5.9
+%define release %mkrel 1
 
 Summary: 	PDF to DJVu file converter
 Name:		%{name}
@@ -39,4 +39,4 @@ metadata.
 %doc COPYING doc/changelog.txt doc/djvudigital.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}*
-
+%{_datadir}/*/*
