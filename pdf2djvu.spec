@@ -1,5 +1,5 @@
 %define name	pdf2djvu
-%define version	0.5.11
+%define version	0.6.0
 %define release %mkrel 1
 
 Summary: 	PDF to DJVu file converter
