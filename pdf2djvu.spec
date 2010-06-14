@@ -1,5 +1,5 @@
 %define name	pdf2djvu
-%define version	0.7.1
+%define version	0.7.4
 %define release %mkrel 1
 
 Summary: 	PDF to DJVu file converter
@@ -12,7 +12,7 @@ Group:		Publishing
 Url:		http://pdf2djvu.googlecode.com/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	djvulibre-devel >= 3.5.21, djvulibre >= 3.5.21
-BuildRequires:	libpoppler-devel >= 0.7.3
+BuildRequires:	libpoppler-devel >= 0.7.3, libgomp-devel
 BuildRequires:	graphicsmagick-devel
 
 %description
