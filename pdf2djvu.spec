@@ -1,6 +1,6 @@
 %define name	pdf2djvu
-%define version	0.7.4
-%define release %mkrel 3
+%define version	0.7.6
+%define release %mkrel 1
 
 Summary: 	PDF to DJVu file converter
 Name:		%{name}
@@ -13,7 +13,7 @@ Url:		http://pdf2djvu.googlecode.com/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	djvulibre-devel >= 3.5.21, djvulibre >= 3.5.21
 BuildRequires:	libpoppler-devel >= 0.7.3, libgomp-devel
-BuildRequires:	graphicsmagick-devel
+BuildRequires:	libxslt-devel, graphicsmagick-devel
 
 %description
 pdf2djvu creates DjVu files from PDF files. It's able to extract
@@ -36,7 +36,7 @@ metadata.
 
 %files
 %defattr(-,root,root)
-%doc COPYING doc/changelog.txt doc/djvudigital.txt
+%doc COPYING doc/changelog doc/credits.txt doc/djvudigital.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}*
 %{_datadir}/*/*
