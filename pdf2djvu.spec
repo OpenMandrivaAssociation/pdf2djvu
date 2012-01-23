@@ -1,5 +1,5 @@
 %define name	pdf2djvu
-%define version	0.7.11
+%define version	0.7.12
 %define release %mkrel 1
 
 Summary: 	PDF to DJVu file converter
@@ -10,7 +10,6 @@ Source0:	http://pdf2djvu.googlecode.com/files/%{name}_%{version}.tar.gz
 License:	GPLv2
 Group:		Publishing
 Url:		http://pdf2djvu.googlecode.com/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	djvulibre-devel >= 3.5.21, djvulibre >= 3.5.21
 BuildRequires:	libpoppler-devel >= 0.7.3, libgomp-devel
 BuildRequires:	libxslt-devel, graphicsmagick-devel
@@ -28,11 +27,8 @@ metadata.
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall
 %__install -m 644 -D doc/%{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
