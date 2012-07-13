@@ -1,7 +1,6 @@
 %define name	pdf2djvu
-%define version	0.7.12
-%define release 2
-
+%define version	0.7.13
+%define release 1
 
 Summary: 	PDF to DJVu file converter
 Name:		%{name}
@@ -31,14 +30,11 @@ metadata.
 %makeinstall
 %__install -m 644 -D doc/%{name}.1 %{buildroot}%{_mandir}/man1/%{name}.1
 
-
 %find_lang %{name}
-
 
 %files -f %{name}.lang
 %doc COPYING doc/changelog doc/credits.txt doc/djvudigital.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
-%{_mandir}/ru/man1/%{name}.1.*
-%{_mandir}/de/man1/%{name}.1.*
-%{_mandir}/pl/man1/%{name}.1.*
+%{_mandir}/*/man1/%{name}.1.*
+
