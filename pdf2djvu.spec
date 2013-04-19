@@ -1,11 +1,7 @@
-%define name	pdf2djvu
-%define version	0.7.13
-%define release 1
-
 Summary: 	PDF to DJVu file converter
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		pdf2djvu
+Version:	0.7.13
+Release:	2
 Source0:	http://pdf2djvu.googlecode.com/files/%{name}_%{version}.tar.gz
 License:	GPLv2
 Group:		Publishing
