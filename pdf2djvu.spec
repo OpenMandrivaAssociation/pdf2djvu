@@ -1,7 +1,7 @@
 Summary: 	PDF to DJVu file converter
 Name:		pdf2djvu
 Version:	0.7.13
-Release:	2
+Release:	3
 Source0:	http://pdf2djvu.googlecode.com/files/%{name}_%{version}.tar.gz
 License:	GPLv2
 Group:		Publishing
