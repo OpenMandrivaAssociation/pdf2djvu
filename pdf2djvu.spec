@@ -1,14 +1,17 @@
 Summary: 	PDF to DJVu file converter
 Name:		pdf2djvu
-Version:	0.7.13
-Release:	3
-Source0:	http://pdf2djvu.googlecode.com/files/%{name}_%{version}.tar.gz
+Version:	0.9.4
+Release:	1
+Source0:	https://bitbucket.org/jwilk/pdf2djvu/downloads/%{name}-%{version}.tar.xz
 License:	GPLv2
 Group:		Publishing
-Url:		http://pdf2djvu.googlecode.com/
-BuildRequires:	djvulibre-devel >= 3.5.21, djvulibre >= 3.5.21
-BuildRequires:	libpoppler-devel >= 0.7.3, libgomp-devel
-BuildRequires:	libxslt-devel, graphicsmagick-devel
+Url:		http://jwilk.net/software/pdf2djvu
+BuildRequires:	djvulibre-devel >= 3.5.21
+BuildRequires:	djvulibre >= 3.5.21
+BuildRequires:	poppler-devel >= 0.7.3
+BuildRequires:	libgomp-devel
+BuildRequires:	libxslt-devel
+BuildRequires:	graphicsmagick-devel
 
 %description
 pdf2djvu creates DjVu files from PDF files. It's able to extract
@@ -29,7 +32,7 @@ metadata.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc COPYING doc/changelog doc/credits.txt doc/djvudigital.txt
+%doc doc/COPYING doc/changelog doc/credits.txt doc/djvudigital.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
 %{_mandir}/*/man1/%{name}.1.*
