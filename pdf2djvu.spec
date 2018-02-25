@@ -1,8 +1,8 @@
 Summary: 	PDF to DJVu file converter
 Name:		pdf2djvu
-Version:	0.9.4
+Version:	0.9.8
 Release:	1
-Source0:	https://bitbucket.org/jwilk/pdf2djvu/downloads/%{name}-%{version}.tar.xz
+Source0:	https://github.com/jwilk/pdf2djvu/releases/download/%{version}/%{name}-%{version}.tar.xz
 License:	GPLv2
 Group:		Publishing
 Url:		http://jwilk.net/software/pdf2djvu
@@ -32,7 +32,7 @@ metadata.
 %find_lang %{name}
 
 %files -f %{name}.lang
-%doc doc/COPYING doc/changelog doc/credits.txt doc/djvudigital.txt
+%doc doc/COPYING doc/changelog doc/credits doc/djvudigital
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
 %{_mandir}/*/man1/%{name}.1.*
