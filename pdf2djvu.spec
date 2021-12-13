@@ -10,7 +10,7 @@ BuildRequires:	djvulibre-devel >= 3.5.21
 BuildRequires:	djvulibre >= 3.5.21
 BuildRequires:	poppler-devel >= 0.7.3
 BuildRequires:	libgomp-devel
-BuildRequires:	libxslt-devel
+BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	graphicsmagick-devel
 
 %description
