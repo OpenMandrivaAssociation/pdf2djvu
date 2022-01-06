@@ -20,6 +20,7 @@ metadata.
 
 %prep
 %autosetup -p1
+CXXFLAGS="%{optflags} -std=gnu++20" \
 %configure
 
 %build
