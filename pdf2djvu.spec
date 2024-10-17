@@ -5,7 +5,7 @@ Release:	16
 Source0:	https://github.com/jwilk/pdf2djvu/releases/download/%{version}/%{name}-%{version}.tar.xz
 License:	GPLv2
 Group:		Publishing
-Url:		http://jwilk.net/software/pdf2djvu
+Url:		https://jwilk.net/software/pdf2djvu
 BuildRequires:	djvulibre-devel >= 3.5.21
 BuildRequires:	djvulibre >= 3.5.21
 BuildRequires:	poppler-devel >= 0.7.3
