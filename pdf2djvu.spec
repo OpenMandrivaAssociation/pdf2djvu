@@ -13,6 +13,9 @@ BuildRequires:	libgomp-devel
 BuildRequires:	pkgconfig(libxslt)
 BuildRequires:	graphicsmagick-devel
 
+%patchlist
+pdf2djvu-poppler-24.11.patch
+
 %description
 pdf2djvu creates DjVu files from PDF files. It's able to extract
 graphics, text layer, hyperlinks, document outline (bookmarks), and

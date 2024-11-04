@@ -1,0 +1,30 @@
+diff -up pdf2djvu-0.9.19/pdf-backend.cc.omv~ pdf2djvu-0.9.19/pdf-backend.cc
+--- pdf2djvu-0.9.19/pdf-backend.cc.omv~	2024-11-04 15:35:23.500664347 +0100
++++ pdf2djvu-0.9.19/pdf-backend.cc	2024-11-04 16:07:10.458749310 +0100
+@@ -496,12 +496,15 @@ void pdf::Renderer::drawLink(pdf::link::
+ bool pdf::get_glyph(splash::Splash *splash, splash::Font *font,
+   double x, double y, int code, splash::GlyphBitmap *bitmap)
+ {
++  /*
+   if (font == nullptr)
+     return false;
+   splash::ClipResult clip_result;
+   if (!font->getGlyph(code, 0, 0, bitmap, static_cast<int>(x), static_cast<int>(y), splash->getClip(), &clip_result))
+     return false;
+   return (clip_result != splashClipAllOutside);
++  */
++  return true;
+ }
+ 
+ 
+diff -up pdf2djvu-0.9.19/pdf-backend.hh.omv~ pdf2djvu-0.9.19/pdf-backend.hh
+--- pdf2djvu-0.9.19/pdf-backend.hh.omv~	2024-11-04 15:31:46.558061617 +0100
++++ pdf2djvu-0.9.19/pdf-backend.hh	2024-11-04 15:31:49.118092116 +0100
+@@ -44,7 +44,6 @@
+ #include <splash/Splash.h>
+ #include <splash/SplashBitmap.h>
+ #include <splash/SplashClip.h>
+-#include <splash/SplashFont.h>
+ #include <splash/SplashGlyphBitmap.h>
+ #include <splash/SplashPath.h>
+ #include <splash/SplashTypes.h>
