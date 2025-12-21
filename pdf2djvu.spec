@@ -6,6 +6,11 @@ Source0:	https://github.com/jwilk/pdf2djvu/releases/download/%{version}/%{name}-
 License:	GPLv2
 Group:		Publishing
 Url:		https://jwilk.net/software/pdf2djvu
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	djvulibre-devel >= 3.5.21
 BuildRequires:	djvulibre >= 3.5.21
 BuildRequires:	poppler-devel >= 0.7.3
